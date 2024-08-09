@@ -240,5 +240,14 @@ function filterIPByRange(users, start, end) {
         return ipConvert(ip_address) >= start && ipConvert(ip_address) <= end;
     }))
 }
-
 filterIPByRange(inputData, 2164406800, 2164493119)
+
+// Full Names with Initials
+function getFullNamesWithInitials(users) {
+    console.log(users.map((user) => {
+        const {first_name, last_name} = user;
+        return `${first_name} ${last_name} (${first_name[0]}${last_name[0]})`;
+    }))
+}
+getFullNamesWithInitials(inputData)
+
