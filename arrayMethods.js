@@ -240,7 +240,7 @@ function filterIPByRange(users, start, end) {
         return ipConvert(ip_address) >= start && ipConvert(ip_address) <= end;
     }))
 }
-filterIPByRange(inputData, 2164406800, 2164493119)
+filterIPByRange(inputData, 72029201, 16522448116)
 
 // Full Names with Initials
 function getFullNamesWithInitials(users) {
